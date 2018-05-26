@@ -28,7 +28,6 @@ p {
     font-size: 18px;
     line-height: 1.5;
 }
-
 a {
     color: #adebeb;
     -webkit-transition: all .2s ease-in-out;
@@ -315,6 +314,9 @@ a:hover, a:focus {
 	padding:10px;
   border: 2px solid #fff;
 }
+.portfolio-item .portfolio-caption:hover {
+  cursor: default;
+}
 .portfolio-item .portfolio-caption h4 {
   position: relative;
   top: 50%;
@@ -336,9 +338,9 @@ a:hover, a:focus {
   padding-bottom: 175px;
 }
 #contact h2 {
-  margin-bottom:100px;
+  margin-bottom: 100px;
 }
-#contact ul{
+#contact ul.banner-social-buttons {
   margin-top: 125px;
 }
 .btn {
@@ -365,20 +367,18 @@ a:hover, a:focus {
     background-color: #42dca3;
 }
 
-ul.banner-social-buttons {
-    margin-top: 80px;
-}
 
 @media(max-width:767px) {
+    #contact{ padding-bottom: 120px; }
+    #contact h2 { margin-bottom: 80px; }  
+    #contact ul.banner-social-buttons { margin-top: 90px; }  
     ul.banner-social-buttons li {
         display: block;
         margin-bottom: 20px;
         padding: 0;
     }
-
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
-    }
+    ul.banner-social-buttons li:last-child { margin-bottom: 0; }
+    ul.banner-social-buttons li .btn { min-width: 50%; } 
 }
 
 footer {
